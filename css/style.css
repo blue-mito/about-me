@@ -1,5 +1,52 @@
+body {
+  background-color: #DED3B6;
+  line-height: 1.5;
+  background-image: url("../img/botanic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: azure;
+  font-size: larger;
+}
+
 ul {
-  list-style: armenian;
-  margin: 2rem;
-  padding: 2rem;
+  list-style: disc;
+  padding-bottom: 20px;
+  margin: 40px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 20px;
+}
+
+p {
+  padding: 20px;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.list {
+  padding-bottom: 0px;
+}
+
+.boxy {
+  border: dashed;
+  border-color: beige;
+  border-radius: 5px;
+  height: fit-content;
+  width: fit-content;
+  padding: 0%;
+}
+
+.wave {
+  float: right;
+  padding: 0;
 }
