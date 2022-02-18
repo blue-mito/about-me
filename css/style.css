@@ -39,11 +39,12 @@ p {
 
 .boxy {
   border: dashed;
-  border-color: beige;
+  border-color: azure;
   border-radius: 5px;
   height: fit-content;
   width: fit-content;
   padding: 0%;
+  margin-bottom: 20px;
 }
 
 .wave {
