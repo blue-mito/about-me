@@ -6,12 +6,16 @@ console.log('hello world');
 let username = prompt('Hello there. What is your name?');
 alert('Ah, just as I thought; ' + username + '. A wonderful name!');
 
+//Adds score variable to count for correct answers
+let score = 0;
+
 //Question 1:
 let game = prompt('Would you like to play a game? All responses should be \'yes\' or \'no\'.').toLowerCase();
 
 if (game === 'yes') {
 //console.log('Eggselent');
   alert('Eggselent');
+  score++;
 } else if (game === 'no') {
 //console.log('Too bad! We\'re playing anyway!');
   alert('Too bad! We\'re playing anyway!');
@@ -29,6 +33,7 @@ if (military === 'yes') {
 } else if (military === 'no') {
   //console.log('That\'s right! I was in the Air Force.');
   alert('That\'s right! I was in the Air Force.');
+  score++;
 } else {
   //console.log('I see you\'re playing hardball. Let\'s move on.');
   alert('I see you\'re playing hardball. Let\'s move on.');
@@ -40,6 +45,7 @@ let hometown = prompt('Am I from Western New York?').toLowerCase();
 if (hometown === 'yes') {
   //console.log('That\'s right! From the southern shores of Lake Ontario.');
   alert('That\'s right! From the southern shores of Lake Ontario.');
+  score++;
 } else if (hometown === 'no') {
   //console.log('WHAT?! Do you even know me at all? Of course I am!');
   alert('WHAT?! Do you even know me at all? Of course I am!');
@@ -54,6 +60,7 @@ let peach = prompt('Did I play in peach orchards as a kid?').toLowerCase();
 if (peach === 'yes') {
   //console.log('I sure did. The climate of the great lakes helps to enable fruit tree orchards in such a cold climate.');
   alert('I sure did. The climate of the great lakes helps to enable fruit tree orchards in such a cold climate.');
+  score++
 } else if (peach === 'no') {
   //console.log('Uhm, I actually did. Awkward.');
   alert('Uhm, I actually did. Awkward.');
@@ -71,6 +78,7 @@ if (daughters === 'yes') {
 } else if (daughters === 'no') {
   //console.log('You\'re a keen observer! That\'s right, I have two.');
   alert('You\'re a keen observer! That\'s right, I have two.');
+  score++;
 } else {
   //console.log('You are a rebel, ain\'t ya?');
   alert('You are a rebel, ain\'t ya?');
@@ -89,6 +97,7 @@ for (let i = 0; i < attempts; i++) {
   let favoriteCheese = prompt('Where does swiss rank on my top 10 list of favorite cheeses? You have four attempts! Hint: 1-10');
   if (favoriteCheese === '6') {
     console.log('That\'s correct!');
+    score++;
     break;
   }
   if (favoriteCheese < swiss) {
@@ -111,6 +120,7 @@ while (j < 7) {
     //console.log(rainbow[1]);
     if (color === rainbow[1]) {
       console.log('That is correct.');
+      score++;
       break;
     }
     else {
@@ -123,3 +133,5 @@ while (j < 7) {
 if (j > 6) {
   alert('You have failed. There aren\'t even that many colors to pick from!');
 }
+
+alert('Your final score is ' + score + ' out of 7! Read my website and try again?');
