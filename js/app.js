@@ -97,7 +97,7 @@ for (let i = 0; i < attempts; i++) {
   let favoriteCheese = prompt('Where does swiss rank on my top 10 list of favorite cheeses? You have four attempts! Hint: 1-10');
   if (favoriteCheese === '6') {
     //console.log('That\'s correct!');
-    alert('That\'s correct!');
+    alert('That\'s correct! Maybe it should be higher?');
     score++;
     break;
   }
@@ -123,7 +123,7 @@ while (j < 7) {
     //console.log(rainbow[1]);
     if (color === rainbow[1]) {
       //console.log('That is correct.');
-      alert('That is correct.');
+      alert('That is correct! Oranges are also a delicious fruit.');
       score++;
       break;
     }
