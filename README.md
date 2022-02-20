@@ -1,6 +1,6 @@
-# Lab: 02
+# Lab: 03
 
-## About Me, with a guessing game
+## About Me, with a guessing game **EXTENDED**
 
 This site was created for all of my friends at Code Fellows to get to know me a little better.
 There is even a quiz of *seven* questions to test your knowledge.
