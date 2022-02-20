@@ -9,12 +9,22 @@ body {
   margin-left: 40px;
 }
 
-ul, ol {
+ul {
   list-style: disc;
   padding-bottom: 20px;
   margin: 40px;
   margin-top: 10px;
   line-height: 1.5;
+}
+
+ol {
+  list-style:upper-roman;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  margin:15%;
+  margin-top: 10px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 h1 {

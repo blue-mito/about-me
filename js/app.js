@@ -60,7 +60,7 @@ let peach = prompt('Did I play in peach orchards as a kid?').toLowerCase();
 if (peach === 'yes') {
   //console.log('I sure did. The climate of the great lakes helps to enable fruit tree orchards in such a cold climate.');
   alert('I sure did. The climate of the great lakes helps to enable fruit tree orchards in such a cold climate.');
-  score++
+  score++;
 } else if (peach === 'no') {
   //console.log('Uhm, I actually did. Awkward.');
   alert('Uhm, I actually did. Awkward.');
@@ -136,7 +136,7 @@ while (j < 7) {
 }
 
 if (j > 6) {
-  alert('You have failed. There aren\'t even that many colors to pick from!');
+  alert('You have failed this task. There aren\'t even that many colors to pick from!');
 }
 
 alert('Your final score is ' + score + ' out of 7! Read my website and try again?');
