@@ -96,15 +96,18 @@ let swiss = 6;
 for (let i = 0; i < attempts; i++) {
   let favoriteCheese = prompt('Where does swiss rank on my top 10 list of favorite cheeses? You have four attempts! Hint: 1-10');
   if (favoriteCheese === '6') {
-    console.log('That\'s correct!');
+    //console.log('That\'s correct!');
+    alert('That\'s correct!');
     score++;
     break;
   }
   if (favoriteCheese < swiss) {
-    console.log(`Just a little low! You have ${attempts - i - 1} attempts remaining.`);
+    //console.log(`Just a little low! You have ${attempts - i - 1} attempts remaining.`);
+    alert(`Just a little low! You have ${attempts - i - 1} attempts remaining.`);
   }
   if (favoriteCheese > swiss) {
-    console.log(`Too high! You have ${attempts - i - 1} attempts remaining.`);
+    //console.log(`Too high! You have ${attempts - i - 1} attempts remaining.`);
+    alert(`Too high! You have ${attempts - i - 1} attempts remaining.`);
   }
 }
 
@@ -119,12 +122,14 @@ while (j < 7) {
     //console.log(color);
     //console.log(rainbow[1]);
     if (color === rainbow[1]) {
-      console.log('That is correct.');
+      //console.log('That is correct.');
+      alert('That is correct.');
       score++;
       break;
     }
     else {
-      console.log(`Nope, try again. You have ${6 - j} attempts remaining.`);
+      //console.log(`Nope, try again. You have ${6 - j} attempts remaining.`);
+      alert(`Nope, try again. You have ${6 - j} attempts remaining.`);
       j++;
     }
   }
