@@ -118,12 +118,18 @@ let rainbow = ['red','orange','yellow','blue','indigo','violet'];
 let j = 1;
 
 while (j < 7) {
-  let color = prompt('What is my favorite color of the rainbow?'); {
+  let color = prompt('What is one of my two favorite colors of the rainbow?'); {
     //console.log(color);
     //console.log(rainbow[1]);
     if (color === rainbow[1]) {
       //console.log('That is correct.');
       alert('That is correct! Oranges are also a delicious fruit.');
+      score++;
+      break;
+    }
+    if (color === rainbow[2]) {
+      //console.log('That is correct.');
+      alert('That is correct! Yellow is mellow.');
       score++;
       break;
     }
