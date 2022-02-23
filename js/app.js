@@ -8,8 +8,9 @@ alert('Ah, just as I thought; ' + username + '. A wonderful name!');
 //Adds score variable to count for correct answers
 let score = 0;
 
+/*
 //Question 1:
-function startGame(){
+function startGame(score){
   let game = prompt('Would you like to play a game? All responses should be \'yes\' or \'no\'.').toLowerCase();
   if (game === 'yes') {
   //console.log('Eggselent');
@@ -22,25 +23,33 @@ function startGame(){
   //console.log('Hmm, I don\'t understand. Let\'s play anyways.');
     alert('Hmm, I don\'t understand. Let\'s play anyways.');
   }
+  return score;
 }
-startGame();
+score = startGame(score);
+
+//Question 2:
+function militaryStatus(score){
+  let military = prompt('Was I in the Navy?').toLowerCase();
+
+  if (military === 'yes') {
+  //console.log('Nope. I was in the Air Force');
+    alert('Nope. I was in the Air Force.');
+  } else if (military === 'no') {
+    //console.log('That\'s right! I was in the Air Force.');
+    alert('That\'s right! I was in the Air Force.');
+    score++;
+    //return score;
+  } else {
+    //console.log('I see you\'re playing hardball. Let\'s move on.');
+    alert('I see you\'re playing hardball. Let\'s move on.');
+  }
+  return score;
+}
+score = militaryStatus(score);
+console.log(score);
+*/
 
 /*
-//Question 2:
-let military = prompt('Was I in the Navy?').toLowerCase();
-
-if (military === 'yes') {
-//console.log('Nope. I was in the Air Force');
-  alert('Nope. I was in the Air Force.');
-} else if (military === 'no') {
-  //console.log('That\'s right! I was in the Air Force.');
-  alert('That\'s right! I was in the Air Force.');
-  score++;
-} else {
-  //console.log('I see you\'re playing hardball. Let\'s move on.');
-  alert('I see you\'re playing hardball. Let\'s move on.');
-}
-
 //Question 3:
 let hometown = prompt('Am I from Western New York?').toLowerCase();
 
