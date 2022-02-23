@@ -45,6 +45,7 @@ function militaryStatus(score){
   }
   return score;
 }
+
 score = militaryStatus(score);
 console.log(score);
 
@@ -65,41 +66,51 @@ function myHomeTown(score){
   }
   return score;
 }
-myHomeTown(score);
+score = myHomeTown(score);
+console.log(score);
+
+//Question 4:
+function playPeach(score){
+  let peach = prompt('Did I play in peach orchards as a kid?').toLowerCase();
+  if (peach === 'yes') {
+    //console.log('I sure did. The climate of the great lakes helps to enable fruit tree orchards in such a cold climate.');
+    alert('I sure did. The climate of the great lakes helps to enable fruit tree orchards in such a cold climate.');
+    score++;
+  } else if (peach === 'no') {
+    //console.log('Uhm, I actually did. Awkward.');
+    alert('Uhm, I actually did. Awkward.');
+  } else {
+    //console.log('At a loss for words, eh?');
+    alert('At a loss for words, eh?');
+  }
+  return score;
+}
+score = playPeach(score);
 console.log(score);
 */
 
-/*
-//Question 4:
-let peach = prompt('Did I play in peach orchards as a kid?').toLowerCase();
-
-if (peach === 'yes') {
-  //console.log('I sure did. The climate of the great lakes helps to enable fruit tree orchards in such a cold climate.');
-  alert('I sure did. The climate of the great lakes helps to enable fruit tree orchards in such a cold climate.');
-  score++;
-} else if (peach === 'no') {
-  //console.log('Uhm, I actually did. Awkward.');
-  alert('Uhm, I actually did. Awkward.');
-} else {
-  //console.log('At a loss for words, eh?');
-  alert('At a loss for words, eh?');
-}
-
 //Question 5:
-let daughters = prompt('Do I have three daughters?').toLowerCase();
+function daughterCount(score){
+  let daughters = prompt('Do I have three daughters?').toLowerCase();
 
-if (daughters === 'yes') {
-  //console.log('Not yet, but you never know in the future! The answer is two.');
-  alert('Not yet, but you never know in the future! The answer is two.');
-} else if (daughters === 'no') {
-  //console.log('You\'re a keen observer! That\'s right, I have two.');
-  alert('You\'re a keen observer! That\'s right, I have two.');
-  score++;
-} else {
-  //console.log('You are a rebel, ain\'t ya?');
-  alert('You are a rebel, ain\'t ya?');
+  if (daughters === 'yes') {
+    //console.log('Not yet, but you never know in the future! The answer is two.');
+    alert('Not yet, but you never know in the future! The answer is two.');
+  } else if (daughters === 'no') {
+    //console.log('You\'re a keen observer! That\'s right, I have two.');
+    alert('You\'re a keen observer! That\'s right, I have two.');
+    score++;
+  } else {
+    //console.log('You are a rebel, ain\'t ya?');
+    alert('You are a rebel, ain\'t ya?');
+  }
+  return score;
 }
 
+score = daughterCount(score);
+console.log(score);
+
+/*
 //Question 6:
 //Where does swiss cheese rank on my Top 10 List of favorite cheeses? hint: 1-10
 
