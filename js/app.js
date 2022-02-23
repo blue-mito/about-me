@@ -2,7 +2,6 @@
 
 console.log('hello world');
 
-
 let username = prompt('Hello there. What is your name?');
 alert('Ah, just as I thought; ' + username + '. A wonderful name!');
 
@@ -10,20 +9,23 @@ alert('Ah, just as I thought; ' + username + '. A wonderful name!');
 let score = 0;
 
 //Question 1:
-let game = prompt('Would you like to play a game? All responses should be \'yes\' or \'no\'.').toLowerCase();
-
-if (game === 'yes') {
-//console.log('Eggselent');
-  alert('Eggselent');
-  score++;
-} else if (game === 'no') {
-//console.log('Too bad! We\'re playing anyway!');
-  alert('Too bad! We\'re playing anyway!');
-} else {
-//console.log('Hmm, I don\'t understand. Let\'s play anyways.');
-  alert('Hmm, I don\'t understand. Let\'s play anyways.');
+function startGame(){
+  let game = prompt('Would you like to play a game? All responses should be \'yes\' or \'no\'.').toLowerCase();
+  if (game === 'yes') {
+  //console.log('Eggselent');
+    alert('Eggselent');
+    score++;
+  } else if (game === 'no') {
+  //console.log('Too bad! We\'re playing anyway!');
+    alert('Too bad! We\'re playing anyway!');
+  } else {
+  //console.log('Hmm, I don\'t understand. Let\'s play anyways.');
+    alert('Hmm, I don\'t understand. Let\'s play anyways.');
+  }
 }
+startGame();
 
+/*
 //Question 2:
 let military = prompt('Was I in the Navy?').toLowerCase();
 
@@ -146,3 +148,4 @@ if (j > 6) {
 }
 
 alert('Your final score is ' + score + ' out of 7! Read my website and try again?');
+*/
