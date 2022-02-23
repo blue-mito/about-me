@@ -47,24 +47,29 @@ function militaryStatus(score){
 }
 score = militaryStatus(score);
 console.log(score);
+
+
+//Question 3:
+function myHomeTown(score){
+  let hometown = prompt('Am I from Western New York?').toLowerCase();
+  if (hometown === 'yes') {
+    //console.log('That\'s right! From the southern shores of Lake Ontario.');
+    alert('That\'s right! From the southern shores of Lake Ontario.');
+    score++;
+  } else if (hometown === 'no') {
+    //console.log('WHAT?! Do you even know me at all? Of course I am!');
+    alert('WHAT?! Do you even know me at all? Of course I am!');
+  } else {
+    //console.log('Don\'t like to follow the rules? That\'s okay.');
+    alert('Don\'t like to follow the rules? That\'s okay.');
+  }
+  return score;
+}
+myHomeTown(score);
+console.log(score);
 */
 
 /*
-//Question 3:
-let hometown = prompt('Am I from Western New York?').toLowerCase();
-
-if (hometown === 'yes') {
-  //console.log('That\'s right! From the southern shores of Lake Ontario.');
-  alert('That\'s right! From the southern shores of Lake Ontario.');
-  score++;
-} else if (hometown === 'no') {
-  //console.log('WHAT?! Do you even know me at all? Of course I am!');
-  alert('WHAT?! Do you even know me at all? Of course I am!');
-} else {
-  //console.log('Don\'t like to follow the rules? That\'s okay.');
-  alert('Don\'t like to follow the rules? That\'s okay.');
-}
-
 //Question 4:
 let peach = prompt('Did I play in peach orchards as a kid?').toLowerCase();
 
