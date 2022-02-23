@@ -92,7 +92,6 @@ console.log(score);
 //Question 5:
 function daughterCount(score){
   let daughters = prompt('Do I have three daughters?').toLowerCase();
-
   if (daughters === 'yes') {
     //console.log('Not yet, but you never know in the future! The answer is two.');
     alert('Not yet, but you never know in the future! The answer is two.');
