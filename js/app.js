@@ -87,7 +87,6 @@ function playPeach(score){
 }
 score = playPeach(score);
 console.log(score);
-*/
 
 //Question 5:
 function daughterCount(score){
@@ -108,35 +107,40 @@ function daughterCount(score){
 
 score = daughterCount(score);
 console.log(score);
-
-/*
+*/
 //Question 6:
 //Where does swiss cheese rank on my Top 10 List of favorite cheeses? hint: 1-10
 
 //Define number of attempts
-let attempts = 4;
+function cheeseRank(score){
+  let attempts = 4;
 
-//Define the answer
-let swiss = 6;
+  //Define the answer
+  let swiss = 6;
 
-for (let i = 0; i < attempts; i++) {
-  let favoriteCheese = prompt('Where does swiss rank on my top 10 list of favorite cheeses? You have four attempts! Hint: 1-10');
-  if (favoriteCheese === '6') {
-    //console.log('That\'s correct!');
-    alert('That\'s correct! Maybe it should be higher?');
-    score++;
-    break;
+  for (let i = 0; i < attempts; i++) {
+    let favoriteCheese = prompt('Where does swiss rank on my top 10 list of favorite cheeses? You have four attempts! Hint: 1-10');
+    if (favoriteCheese === '6') {
+      //console.log('That\'s correct!');
+      alert('That\'s correct! Maybe it should be higher?');
+      score++;
+      break;
+    }
+    if (favoriteCheese < swiss) {
+      //console.log(`Just a little low! You have ${attempts - i - 1} attempts remaining.`);
+      alert(`Just a little low! You have ${attempts - i - 1} attempts remaining.`);
+    }
+    if (favoriteCheese > swiss) {
+      //console.log(`Too high! You have ${attempts - i - 1} attempts remaining.`);
+      alert(`Too high! You have ${attempts - i - 1} attempts remaining.`);
+    }
   }
-  if (favoriteCheese < swiss) {
-    //console.log(`Just a little low! You have ${attempts - i - 1} attempts remaining.`);
-    alert(`Just a little low! You have ${attempts - i - 1} attempts remaining.`);
-  }
-  if (favoriteCheese > swiss) {
-    //console.log(`Too high! You have ${attempts - i - 1} attempts remaining.`);
-    alert(`Too high! You have ${attempts - i - 1} attempts remaining.`);
-  }
+  return score;
 }
+score = cheeseRank(score);
+console.log(score);
 
+/*
 //Question 7 Guessing game with an array
 //colors:  red, orange, yellow, green, blue, indigo, violet
 let rainbow = ['red','orange','yellow','blue','indigo','violet'];
