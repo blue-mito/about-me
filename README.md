@@ -8,6 +8,9 @@ A score variable was added so users can easily track their performance.
 
 ### Authors: Derek Douglas with contributions from Zayah/Aiden Lang, Luis Sandoval, Alan Monkman, Sheyna Watkins, and Ken Lindsay
 
+- Driver: Ken Lindsay
+- Navigator: Derek Douglas
+
 ### Links and Resources
 
 - *JAVASCRIPT & JQUERY* by Jon Duckett
@@ -23,3 +26,5 @@ A score variable was added so users can easily track their performance.
 - The biggest takeaway I have had from this project at this point has been the practice with CSS, especially some of the more complex properties that are associated with polishing up the appearance of the site. An example that comes to mind is making a background photo appear and look good.
 
 - As the JavaScript has become more complex to include arrays and loops, I learned how to better format my code and place the correct lines of code within the correct brackets to get the intended effect for the user.
+
+- Working with Ken as my driver was a great experience. I learned some holes that I had in my own knowledge and I could see the power and efficiency of combining knowledge and working together.

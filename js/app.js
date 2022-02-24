@@ -3,7 +3,7 @@
 console.log('hello world');
 
 let username = prompt('Hello there. What is your name?');
-alert('Ah, just as I thought; ' + username + '. A wonderful name!');
+alert(`Ah, just as I thought; ${username}. A wonderful name!`);
 
 //Adds score variable to count for correct answers
 let score = 0;
@@ -179,7 +179,7 @@ function quiz(score){
   score = favoriteRainbow(score);
   console.log(score);
 
-  alert('Your final score is ' + score + ' out of 7! Read my website and try again?');
+  alert(`Your final score is ${score} out of 7! Read my website and try again?`);
 
 }
 quiz(score);
