@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #DED3B6;
   line-height: 1.5;
   background-image: url("../img/botanic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: azure;
+  color: antiquewhite;
   font-size: larger;
   margin-left: 40px;
 }
@@ -30,11 +34,22 @@ ol {
 h1 {
   font-size: 4rem;
   padding: 20px;
+  text-align: center;
+}
+
+img.medium {
+  height: 350px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 6px antiquewhite dashed;
+  display: block
 }
 
 h2 {
   font-size: 2rem;
   padding: 20px;
+  text-align: center;
 }
 
 p {
@@ -55,15 +70,23 @@ footer {
 
 .boxy {
   border: dashed;
-  border-color: azure;
+  border-color: antiquewhite;
   border-radius: 5px;
   height: fit-content;
   width: fit-content;
   padding: 0%;
   margin-bottom: 20px;
 }
-
-.wave {
-  float: right;
-  padding: 0;
+.cheesy {
+  border: dashed;
+  background-image: url("../img/swiss.jpg");
+  border-color: antiquewhite;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: large;
+  color: black;
+  height: fit-content;
+  width: fit-content;
+  padding: 0%;
+  margin-bottom: 20px;
 }
