@@ -37,6 +37,10 @@ h1 {
   text-align: center;
 }
 
+.column {
+  display: flex;
+}
+
 img.medium {
   height: 350px;
   width: 350px;
