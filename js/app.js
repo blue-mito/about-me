@@ -1,10 +1,7 @@
 'use strict';
 
-console.log('hello world');
-
 let username = prompt('Hello there. What is your name?');
 alert(`Ah, just as I thought; ${username}. A wonderful name!`);
-
 let score = 0;
 
 function startQuiz() {
@@ -18,7 +15,6 @@ function startQuiz() {
 }
 startQuiz();
 
-//Question 1:
 function startGame() {
   let game = prompt('Would you like to play a game? All responses should be \'yes\' or \'no\'.').toLowerCase();
   if (game === 'yes') {
@@ -31,8 +27,6 @@ function startGame() {
   }
 }
 
-
-//Question 2:
 function militaryStatus() {
   let military = prompt('Was I in the Navy?').toLowerCase();
 
@@ -45,10 +39,7 @@ function militaryStatus() {
     alert('I see you\'re playing hardball. Let\'s move on.');
   }
 }
-console.log(score);
 
-
-//Question 3:
 function myHomeTown() {
   let hometown = prompt('Am I from Western New York?').toLowerCase();
   if (hometown === 'yes') {
@@ -60,9 +51,7 @@ function myHomeTown() {
     alert('Don\'t like to follow the rules? That\'s okay.');
   }
 }
-console.log(score);
 
-//Question 4:
 function playPeach() {
   let peach = prompt('Did I play in peach orchards as a kid?').toLowerCase();
   if (peach === 'yes') {
@@ -74,9 +63,7 @@ function playPeach() {
     alert('At a loss for words, eh?');
   }
 }
-console.log(score);
 
-//Question 5:
 function daughterCount() {
   let daughters = prompt('Do I have three daughters?').toLowerCase();
   if (daughters === 'yes') {
@@ -88,12 +75,9 @@ function daughterCount() {
     alert('You are a rebel, ain\'t ya?');
   }
 }
-console.log(score);
 
-//Question 6:
 function cheeseRank() {
   let attempts = 4;
-
   let swiss = 6;
 
   for (let i = 0; i < attempts; i++) {
@@ -104,33 +88,24 @@ function cheeseRank() {
       break;
     }
     if (favoriteCheese < swiss) {
-      //console.log(`Just a little low! You have ${attempts - i - 1} attempts remaining.`);
       alert(`Just a little low! You have ${attempts - i - 1} attempts remaining.`);
     }
     if (favoriteCheese > swiss) {
-      //console.log(`Too high! You have ${attempts - i - 1} attempts remaining.`);
       alert(`Too high! You have ${attempts - i - 1} attempts remaining.`);
     }
   }
 }
-console.log(score);
-
-//Question 7 Guessing game with an array
 
 function favoriteRainbow() {
   let favoriteRainbowColors = ['red', 'orange'];
-
   let j = 1;
-
   while (j < 7) {
     let color = prompt('What is one of my two favorite colors of the rainbow?').toLowerCase(); {
       if (color === favoriteRainbowColors[0] || color === favoriteRainbowColors[1]) {
-        //console.log('That is correct.');
         alert('That is correct! Red and orange are my favorite colors of the rainbow.');
         score++;
         break;
       } else {
-        //console.log(`Nope, try again. You have ${6 - j} attempts remaining.`);
         alert(`Nope, try again. You have ${6 - j} attempts remaining.`);
         j++;
       }
@@ -140,7 +115,5 @@ function favoriteRainbow() {
     alert('You have failed this task. There aren\'t even that many colors to pick from!');
   }
 }
-console.log(score);
-
 
 alert(`Your final score is ${score} out of 7! Read my website and try again?`);
